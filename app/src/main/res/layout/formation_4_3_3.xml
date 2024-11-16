@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/formation433"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tenPercentGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/firstThirdGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.60"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/secondThirdGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.30"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/goalkeeperContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tenPercentGuideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/player1"
+            layout="@layout/player_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/defenceContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tenPercentGuideline"
+        app:layout_constraintTop_toTopOf="@id/firstThirdGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/player2"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player3"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player4"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player5"
+            layout="@layout/player_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/secondThirdGuideline"
+        app:layout_constraintBottom_toBottomOf="@id/firstThirdGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/player6"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player7"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player8"
+            layout="@layout/player_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attackContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/secondThirdGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/player9"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player10"
+            layout="@layout/player_view" />
+        <include
+            android:id="@+id/player11"
+            layout="@layout/player_view" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

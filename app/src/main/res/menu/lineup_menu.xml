@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/confirm"
+        android:icon="@drawable/ic_checkmark"
+        android:title="@string/lineup_menu_confirm_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/clear"
+        android:icon="@drawable/ic_clear"
+        android:title="@string/lineup_menu_clear_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/formation442"
+        android:title="@string/lineup_menu_formation_442_title"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/formation433"
+        android:title="@string/lineup_menu_formation_433_title"
+        app:showAsAction="never" />
+
+</menu>

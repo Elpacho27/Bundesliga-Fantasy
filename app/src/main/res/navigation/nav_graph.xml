@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="hr.ferit.patrikocelic.bundesligafantasy.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_lineupFragment"
+            app:destination="@id/lineupFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lineupFragment"
+        android:name="hr.ferit.patrikocelic.bundesligafantasy.ui.lineup.LineupFragment"
+        android:label="LineupFragment"
+        tools:layout="@layout/fragment_lineup" >
+        <action
+            android:id="@+id/action_lineupFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_lineupFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="hr.ferit.patrikocelic.bundesligafantasy.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="hr.ferit.patrikocelic.bundesligafantasy.ui.players.PlayersFragment"
+        android:label="PlayersFragment"
+        tools:layout="@layout/fragment_players">
+        <argument
+            android:name="viewId"
+            app:argType="integer" />
+        <argument
+            android:name="position"
+            app:argType="hr.ferit.patrikocelic.bundesligafantasy.ui.lineup.Position" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="hr.ferit.patrikocelic.bundesligafantasy.ui.result.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+</navigation>

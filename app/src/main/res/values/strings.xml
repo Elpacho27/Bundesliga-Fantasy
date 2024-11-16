@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Bundesliga Fantasy</string>
+    <string name="create_lineaupbutt" translatable="false">CREATE LINEUP</string>
+    <string name="profilebutt" translatable="false">PROFILE</string>
+
+
+
+    <!--ProfileScreen-->
+    <string name="profile_empty_list_message">Results list is empty</string>
+
+    <!--ResultScreen-->
+    <string name="result_total_points_message">Your team made %d points!</string>
+
+    <!--PlayersScreen-->
+    <string name="players_name_placeholder" translatable="false">%s %s</string>
+    <string name="players_menu_refresh_title">Refresh</string>
+
+    <!--LineupScreen-->
+    <string name="lineup_select_all_players">Select all players</string>
+    <string name="lineup_menu_confirm_title">Confirm</string>
+    <string name="lineup_menu_clear_title">Clear</string>
+    <string name="lineup_menu_formation_442_title" translatable="false">4–4–2</string>
+    <string name="lineup_menu_formation_433_title" translatable="false">4–3–3</string>
+
+</resources>

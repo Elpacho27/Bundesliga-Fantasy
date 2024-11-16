@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ProfileScreen-->
+    <string name="profile_empty_list_message">Lista rezultata je prazna</string>
+
+    <!--ResultScreen-->
+    <string name="result_total_points_message">Tvoja ekipa je osvojila %d bodova!</string>
+
+    <!--PlayersScreen-->
+    <string name="players_menu_refresh_title">Osvježi</string>
+
+    <!--LineupScreen-->
+    <string name="lineup_select_all_players">Odaberi sve igrače</string>
+    <string name="lineup_menu_confirm_title">Potvrdi</string>
+    <string name="lineup_menu_clear_title">Očisti</string>
+</resources>
